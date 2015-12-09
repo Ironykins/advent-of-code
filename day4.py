@@ -19,7 +19,7 @@ while not found:
     m.update(inStuff);
     m.update(str(curNum));
     
-    if m.hexdigest()[:5] == "000000": 
+    if m.hexdigest()[:5] == "00000": 
         found = True
 
     # print m.hexdigest()
