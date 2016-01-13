@@ -20,7 +20,7 @@ opPattern = re.compile('([0-9a-z]*)[\\s]*(AND|OR|LSHIFT|RSHIFT|NOT)[\\s]*([0-9a-
 # Matches <operand> -> <var>
 assignPattern = re.compile('([0-9a-z]+)[\\s]*->[\\s]*([a-z]+)');
 
-# Just holds 
+# Just holds
 class Wire:
     def __init__(self, name):
         self.name = name
@@ -48,7 +48,7 @@ class Wire:
     # Evaluate the value of self wire.
     # Should always return an integer.
     def getVal(self):
-        if self.value: 
+        if self.value:
             # If our value is defined by another wire, get its value.
             # This will spit errors if there's a stray value inserted. That's cool.
             if self.value in wires:
@@ -92,7 +92,7 @@ class Wire:
 
 # Keep track of all our wires to avoid duplicates.
 wires = {'a':Wire('a')}
-        
+
 # Main program. Go line by line through the file.
 for line in inFile:
     opp = opPattern.match(line)
@@ -123,7 +123,7 @@ for line in inFile:
         wires[wireName].setValue(asp.group(1))
     else:
         print 'Could Not Parse: \"%s\"' % line
-    
+
 aVal = wires['a'].getVal()
 print "\nValue of a: %d" % (aVal)
 print "Resetting wire values for part b..."
