@@ -10,7 +10,7 @@ import re
 
 # Finds the shortest path.
 # Recursion! Inefficient Recursion!
-def shortPath(path, totalWeight):
+def longPath(path, totalWeight):
     # Base Case
     if len(path) == len(places):
         return totalWeight
@@ -18,21 +18,21 @@ def shortPath(path, totalWeight):
     # Gross ugly multiple recursion calls here.
     # I think this is like O(n!) or comparable.
     # Probably worse with the python overhead.
-    curMin = 99999
+    curMax = 0
     for place in places:
         if path == []:
-            thisPath = shortPath([place], 0)
-            if thisPath < curMin:
-                curMin = thisPath
+            thisPath = longPath([place], 0)
+            if thisPath > curMax:
+                curMax = thisPath
         elif place not in path:
             linkWeight = graph[(path[len(path)-1], place)]
             newPath = list(path)
             newPath.append(place)
-            thisPath = shortPath(newPath, totalWeight + linkWeight)
-            if thisPath < curMin:
-                curMin = thisPath
+            thisPath = longPath(newPath, totalWeight + linkWeight)
+            if thisPath > curMax:
+                curMax = thisPath
 
-    return curMin
+    return curMax
 
 # Represent it as a graph.
 # Or a 2d array
@@ -67,4 +67,4 @@ for line in inFile:
 # Start at some arbitrary node. Doesn't matter which.
 
 # TODO: Probably don't hard-code names.
-print "Shortest Path Distance is: %d" % shortPath([], 0)
+print "Shortest Path Distance is: %d" % longPath([], 0)
