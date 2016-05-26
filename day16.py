@@ -4,7 +4,7 @@
 #
 # Copyright © 2016 konrad <konrad@serenity>
 #
-# Cookie Recipes
+# Aunt Sue
 import re
 
 patt = re.compile("Sue ([0-9]+): ([A-Za-z]+): ([0-9]+), ([A-Za-z]+): ([0-9]+), ([A-Za-z]+): ([0-9]+)")
