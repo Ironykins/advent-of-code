@@ -4,7 +4,7 @@
 #
 # Copyright © 2016 konrad <konrad@serenity>
 #
-# Aunt Sue
+# Reindeer Chemistry
 import re
 
 rulePattern = re.compile("([A-Za-z]+) => ([A-Za-z]+)")
