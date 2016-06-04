@@ -1,10 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-# vim:fenc=utf-8
-#
-# Copyright © 2016 konrad <konrad@serenity>
-#
-# Reindeer Chemistry
 import re
 
 rulePattern = re.compile("([A-Za-z]+) => ([A-Za-z]+)")

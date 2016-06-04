@@ -1,3 +1,11 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# vim:fenc=utf-8
+#
+# Copyright © 2016 konrad <konrad@serenity>
+#
+# Copy Protection on the Weather Machine
+
 initial_code = 20151125
 target_row = 2947
 target_col = 3029

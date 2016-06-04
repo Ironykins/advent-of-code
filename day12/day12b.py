@@ -1,11 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-# vim:fenc=utf-8
-#
-# Copyright © 2016 konrad <konrad@serenity>
-#
-# Accounting Elves part 2
-
 import json
 
 def sumInts(node):

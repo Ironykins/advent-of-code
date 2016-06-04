@@ -1,10 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-# vim:fenc=utf-8
-#
-# Copyright © 2016 konrad <konrad@serenity>
-#
-# Cookie Recipes
 import re
 
 patt = re.compile("([A-Za-z]+): capacity ([-]*[0-9]+), durability ([-]*[0-9]+), flavor ([-]*[0-9]+), texture ([-]*[0-9]+), calories ([-]*[0-9]+)")

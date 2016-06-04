@@ -1,9 +1,4 @@
 /*
- * day4b.c
- * Copyright (C) 2015 konrad <konrad@serenity>
- *
- * Distributed under terms of the MIT license.
- *
  * Written for the advent of code
  *
  * The python script was not fast enough. This finds hashes with leading zeros many times faster.

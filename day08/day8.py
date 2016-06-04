@@ -1,11 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-# vim:fenc=utf-8
-#
-# Copyright © 2015 konrad <konrad@serenity>
-#
-# Santa's List Problem
-
 import re
 
 inFile  = open('day8.txt', 'r');

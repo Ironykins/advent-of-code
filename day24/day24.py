@@ -1,10 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-# vim:fenc=utf-8
-#
-# Copyright © 2016 konrad <konrad@serenity>
-#
-# Sleigh Balancing
 from itertools import chain, combinations
 from functools import reduce
 from operator import mul
